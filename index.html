@@ -16,8 +16,54 @@
       <a href="/" aria-current="page">Home</a>
       <a href="/page2.html">Other page</a>
     </nav>
-    <main>
-      <h1>Home page</h1>
+    <main>    
+      <form method ="post" action =""> 
+        
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required /><br /><br />
+        
+        <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required /><br /><br />
+        
+        <label for="edad" >Edad</label>
+        <input type="number" id="edad" name="edad" required /><br /><br />
+        
+        <label for="genero">Genero</label> <br>
+        <input type="radio" name="genero" value="femenino" checked> Femenino<br>
+        <input type="radio" name="genero" value="masculino"> Masculino<br>
+        <input type="radio" name="genero" value="otro"> Otro <required /><br /><br /> 
+        
+        <label for="materiafavorita">Materia favorita</label>
+        <select name="materiafavorita" id="materiafavorita">
+          <option value="dds">Desarrollo de Software</option>
+          <option value="dsi">Diseno de Sistemas de Informacion</option>
+          <option value="com">Comunicacion de datos</option>
+          <option value="bda">Bases de datos</option>
+          <option value="ninguna" selected >Elegir materia</option>
+        </select
+        ><br /><br />
+
+        <label for="habilidades">Habilidades</label> <br>
+        <input type="checkbox" name="habilidad1" value="saltar" >Saltar<br>
+        <input type="checkbox" name="habilidad2" value="bailar" >Bailar<br>
+        <input type="checkbox" name="habilidad3" value="cantar" >Cantar<br>
+        <br>
+        
+        <label for="nivelinterese">Nivel de interes de la materia</label> <br>
+        <input type="radio" name="alto" id="alto" >Alto<br>
+        <input type="radio" name="medio" id="medio" >Medio<br>
+        <input type="radio" name="bajo" id="bajo" >Bajo<br>
+        <br>
+
+        <label for="comentario">Comentarios adicionales</label> <br>
+        <textarea name="comentario" id="comentario" cols="35" rows="6" required></textarea>
+        <br><br>
+
+        <button type="submit" >Enviar formulario</button>
+            
+
+
     </main>
   </body>
 </html>
+
